@@ -34,23 +34,21 @@ header a img{
     /* margin-bottom: 70px; */
 }
 
-.headerImg{
-    width: 49vw;
-    height: 22vh;
-    /* padding-left: 70px; */
-}
-
 img{
     width: 100%;
 }
 
-.backgroundRed{
-    background-color: rgb(221, 10, 10);
+.navDegrade{
+    background: linear-gradient(to top, black, red);
 }
+
+/* .backgroundRed{
+    background-color: rgb(221, 10, 10);
+} */
 
 .independienteH1{
     color:rgb(255, 255, 255);
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 13px;
 }
 
@@ -58,13 +56,10 @@ nav ul{
     justify-content: center;
     list-style: none;
     display: flex;
-    /* margin-top: 50px;
-    margin-left: -30px; */
-    margin-left: 20px;
 }
 
 nav ul li{
-    border-right: solid rgba(49, 2, 2, 0.486) 2px;
+    border-right: solid rgb(255, 255, 255) 2px;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -72,12 +67,12 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul li a:hover{
-    color: black;
+    color: red;
 }
 
 .templateAreasindex{
@@ -212,7 +207,7 @@ nav ul li a:hover{
 }
 
 .galeriaBorder{
-    border:10px solid rgb(0, 0, 0);
+    border: 4px solid rgb(0, 0, 0);
     /* margin-left: 190px;
     margin-right: 187px;
     padding-top: 2px; */
@@ -250,10 +245,10 @@ nav ul li a:hover{
 }
 
 .pieIcon{
-    width: 50px;
+    padding: 0px 9px;
+    width: 60px;
     height: auto;
-    margin-right: 20px;
-    padding: 5px; 
+      
 }
 
 @media (min-width:700px){
@@ -643,6 +638,19 @@ nav ul li a:hover{
         padding-right: 30px;  */
     }
 
+    @keyframes animateH2 {
+        0%{width: 400px; color: red; background-color: white;}
+        50%{width: 1500px; background-color: rgb(240, 70, 70);}
+        /* 100%{width: 1500px;}         */
+    }
+
+    .animate{
+        animation-name: animateH2;
+        animation-duration: 7s;
+        animation-iteration-count: 1;
+    }
+
+
 }
 
     /* plantel*/
@@ -672,41 +680,83 @@ nav ul li a:hover{
     .backgroundCancha{
         background-image: url(../img/cancha);
         background-size: 100% 100%;
-        height: auto; 
+        height: 300px; 
+        width: 300px;
+        justify-content: center;
+        align-items: center;
     }
 
     .container{
         display: flex;
-        justify-content: space-around;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
     }
 
     .equipoH2{
         font-size: 2rem;
         background-color: rgb(20, 201, 50);
         color: rgb(3, 7, 3);
-        display: flex;
-        justify-content: center;
-        margin: 30px 0px;
+        /* display: flex;
+        justify-content: center; */
+        margin: 15px 0px;
     }
 
     .cajaSuplentes{
-        font-size: 1rem;
-        height: 20rem;
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* width: 70px; */
+        height: auto; 
+        margin: 10px 90px;        
+    }
+
+    .positionJugadores{
+        margin-bottom: 40px;
     }
 
     .cajaEquipo{
-        font-size: 1rem;
-        line-height: 10rem;
+        font-size: 1.5rem;
+        /* line-height: 7rem; */
+    }
+
+    .positionArquero{
+        margin-top: 20px;
+    }
+
+    .positionCentrales{
+        margin-top: 10px;
+    }
+
+    .positionLateralder{
+        padding-right: 190px;
+    }
+
+    .positionLateralizq{
+        padding-left: 150px;
+        margin-bottom: 30px;
+    }
+
+    .positionVolanteder{
+        margin-top: 30px;
+        padding-right: 170px;
+    }
+
+    .positionVolanteizq{
+        padding-left: 150px;
+    }
+
+    .positionDelanteros{
+        margin-top: 25px;
     }
     
     @media (min-width:700px){
-        .templateAreastienda{
-            grid-template-columns: repeat(2, 50vw);
+        .templateAreasplantel{
+            grid-template-columns:1fr;
             grid-row: auto;
             grid-template-areas: 
-            "nav nav"
-            "filtros main"
-            "pie pie" ;    
+            "nav"
+            "main"
+            "pie" ;    
         }
     
         /* #header{
@@ -723,6 +773,15 @@ nav ul li a:hover{
             margin-top: 13px;
         }
 
+        .equipoH2{
+            font-size: 3rem;
+            background-color: rgb(20, 201, 50);
+            color: rgb(3, 7, 3);
+            /* display: flex;
+            justify-content: center; */
+            margin: 15px 0px;
+        }
+
         /* .productosLista{
             font-size: 1.5rem;
         } */
@@ -735,71 +794,98 @@ nav ul li a:hover{
         .filtrosSize{
             font-size: 1.3rem;
         }
+
+        .backgroundCancha{
+            background-image: url(../img/cancha);
+            background-size: 100% 100%;
+            height: 440px; 
+            width: 400px;            
+        }
+
+        .cajaEquipo{
+            font-size: 1.8rem;
+            /* line-height: 7rem; */
+        }
+
+        .cajaSuplentes{
+            font-size: 1.5rem;
+            line-height: 30px;
+            padding: 5px 0px;
+            /* width: 70px; */
+            /* height: auto;  */
+            /* margin: 10px 90px;         */
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .positionCentrales{
+            margin-top: 25px;
+        }
+    
+        .positionLateralder{
+            padding-right: 260px;
+            margin-top: 5px;
+        }
+    
+        .positionLateralizq{
+            padding-left: 220px;
+            margin-top: 20px;
+        }
+    
+        .positionVolanteder{
+            margin-top: 70px;
+            padding-right: 220px;
+        }
+    
+        .positionVolanteizq{
+            padding-left: 230px;
+        }
+    
+        .positionDelanteros{
+            margin-top: 40px;
+        } 
         
     }  
     @media (min-width:850px){
-        .templateAreastienda{
+        .templateAreasplantel{
             grid-template-columns: repeat(3, 33.3vw);
             grid-row: auto;
             grid-template-areas: 
             "nav nav nav"
-            "filtros main main"
+            "main main main"
             "pie pie pie" ;    
-        }
-
-        .filtrosSize{
-            font-size: 1.8rem;
-        }
-
-        .productosLista{
-            flex-wrap: wrap;
-            display: flex;
-        }
-
-        .marginProductos{
-            border: solid;
-            width: 46%;
-            height: auto;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
-        /* .productos{
-            width: 24vw; 
-            height: 39vh;
-        } */
-
-        .filtrosSpan{
-            font-size: 2rem;
-    
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     
         #header{
             display: flex;
             justify-content: space-around;
-        }
+        } 
 
         #independienteH1{
             color:rgb(255, 255, 255);
             font-size: 5rem;
             margin-top: 40px;
-            margin-left: 30px;
+            /* margin-left: 30px; */
         }
     
         nav ul{
             justify-content: center;
             list-style: none;
-            display: flex;
-            margin-top: 120px;
+            display: flex; 
+            /* margin-top: 120px; */
             /* margin-left: -30px;  */
-            margin-left: 20px;
+            /* margin-left: 20px; */
         }
     
         nav ul li{
             border-right: solid rgba(49, 2, 2, 0.486) 2px;
             padding-right: 3px;
-            padding-left: 3px;
+            padding-left: 3px; 
         }        
     
         nav ul li a{
@@ -807,17 +893,71 @@ nav ul li a:hover{
             color: white;
             font-size: 1.7rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } 
+
+        .backgroundCancha{
+            background-image: url(../img/cancha);
+            background-size: 100% 100%;
+            height: auto; 
+            width: 600px; 
+            margin-left: 40px;           
         }
+
+        .cajaEquipo{
+            font-size: 2.3rem;
+        }
+
+        .cajaSuplentes{
+            font-size: 3rem;
+            line-height: 30px;
+            padding: 5px 0px;
+            /* width: 70px; */
+            height: auto; 
+            /* margin: 10px 90px;         */
+        }
+
+        /* .positionArquero{
+            margin: 0px;
+        } */
+        
+        .positionCentrales{
+            margin-top: 25px;
+        }
+    
+        .positionLateralder{
+            padding-right: 260px;
+            margin-top: 5px;
+        }
+    
+        .positionLateralizq{
+            padding-left: 220px;
+            /* margin-top: 20px; */
+        }
+    
+        .positionVolanteder{
+            margin-top: 70px;
+            padding-right: 220px;
+        }
+    
+        .positionVolanteizq{
+            padding-left: 230px;
+
+        }
+    
+        .positionDelanteros{
+            margin-top: 40px;
+        } 
+        
     
     }
     
     @media (min-width:1050px){
-        .templateAreastienda{
+        .templateAreasplantel{
             grid-template-columns: repeat(3, 33.3vw);
             grid-row: auto;
             grid-template-areas: 
             "nav nav nav"
-            "filtros main main"
+            "main main main"
             "pie pie pie" ;    
         }
     
@@ -876,12 +1016,12 @@ nav ul li a:hover{
     }
          
          @media (min-width:1300px){
-        .templateAreastienda{
+        .templateAreasplantel{
             grid-template-columns: repeat(4, 25vw);
             grid-row: auto;
             grid-template-areas: 
             "nav nav nav nav"
-            "filtros main main main"
+            "main main main main"
             "pie pie pie pie" ;    
         }
     
@@ -928,9 +1068,11 @@ nav ul li a:hover{
     
     }
 
-
-
     /*tienda*/
+
+    .filtrosCursor:hover{
+        cursor:pointer
+    }
 
     .templateAreastienda{
         display: grid;
@@ -1052,12 +1194,13 @@ nav ul li a:hover{
 
     .productosLista{
         display: flex;
-        flex-wrap: wrap;
-        flex-direction:row;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
         font-size: 1rem;
         margin-top: 20px;
         margin-bottom: 20px;
-        margin-right: 40px;
+        /* margin-right: 40px; */
     }
 
     .productosTexto{
@@ -1068,7 +1211,7 @@ nav ul li a:hover{
     .marginProductos{
         border: solid;
         margin-bottom: 20px;
-        width: 80%;
+        width: 70%;
     }
 
     /* .productos{
@@ -1084,9 +1227,10 @@ nav ul li a:hover{
         color: red;
     }
 
-    .border{
+    .borderGray{
         border-bottom: solid;
         color: gray;
+        
     }
 
     .backgroundWhite{
