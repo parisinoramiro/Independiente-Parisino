@@ -1,140 +1,187 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/logo-pestaña.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Independiente</title>
-</head>
-<body >
-    <div class="templateAreasindex">
-
-        <header id="header" class="navDegrade">
-            <div class="headerDiv">
-                <a href="index.html">
-                    <img src="img/logo.jpg" alt="logo de Independiente">
-                </a>
-                <h1 class="independienteH1">Independiente</h1>            
-            </div>
-         <nav>
-
-            <ul>
-                <li>
-                <a href="index.html">Inicio </a>
-            </li>
-            <li>
-                <a href="plantel.html">Plantel </a>
-            </li>
-            <li>
-                <a href="tienda.html">Tienda</a>
-            </li>
-            <li>
-                <a href="nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-            
-             </ul>
-         </nav>
-
-
-        </header>  
-
-           <div class="templateAreas grid">
-            <nav id="header"> </nav>
-             <main id="main"></main>
-             <aside id="galeria"></aside>
-              <footer id="footer"></footer>
-            </div>
     
-    <main id="main" class="seccionesArticulos">
-        <section class="positionNoticia">
-                <article class="backgroundImg2  textCenter textWhite">
-                    <h2 class="ultimasnoticiasH2 animate">Últimas Noticias</h2> 
-                    <img src="img/falcioni.jpeg" alt="noticia" class="imgNoticia">
-                    <p class="noticiaTexto">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium temporibus voluptas quia ea dolor! Commodi rem natus sequi quos harum consequatur error vitae odit sunt aliquid voluptates, accusantium quae laudantium!
-                        Lorem ipsum dolor,  fugiat iste.
-                    </p>
-                </article>          
-                
-            </section>
-            <section class="positionNoticia ">        
-                <article class=" backgroundImg2 textCenter">
-                    <h3 class="backgroundWhite textRed gano-y-goleoH3">Ganó y Goleó  </h3>                
-                    <img src="img/partido.jpg" alt="cai 3 colon 0" class="imgPartido" >
-                    <!-- <iframe class="vidPartido" src="https://www.youtube.com/embed/gbOmF9I4GpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                    <p class="noticiaTexto textWhite">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo, nobis voluptatem ipsum, quia eos placeat sint minus, numquam quibusdam nostrum similique. Non aperiam nesciunt consequatur excepturi odio, corrupti neque.</p>
-                </article>
-                
-            </section>        
-        </main>  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <div id="galeria"  class="backgroundImg2 divGaleria">
+    <!-- mi css -->
+    <link rel="stylesheet" href="css/style.css">
 
-            <h2 class="textCenter galeriaH2">Galería</h2>
+    <title>Independiente</title>
+  </head>
+  <body>
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg navbar-light navDegrade" id="botonera">
+      <!-- lg de navbar-expand-lg(break point, sirve como media queris) tiene un total de 992 px, menos a eso se achica la pantalla y aparece el boton hamburguesa -->
+      <div class="container-fluid ">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="img/logo.jpg" class="float-start" alt="">
+        </a>
 
-            <div class="templateGaleria galeriaBorder">
-                
-                <div class="templateImg2 ">
-                <img src="img/img-equipo2.jpg" alt="" class="positionImg2">
-                </div>
-            
-            <div >
-                <img src="img/img-equipo.jpg" alt="">
-            </div>
+        <h1 class="fs-4 text-white text-xl-center">Independiente</h1>
 
-            <div>
-                <img src="img/img-equipo3.jpg" alt="">
-            </div>
-            
-            <div>
-                <img src="img/img-equipo4.jpg" alt="">
-            </div>
-
-            <div>
-                <img src="img/img-equipo5.jpg" alt="">
-            </div>
-            
-            <div class="templateimg9" >
-                <img src="img/img-equipo9.jpg" alt="" class="positionImg9">
-            </div>
-            
-            <div  >
-                <img src="img/img-equipo6.jpg" alt="">
-            </div> 
-            
-            <div  >
-                <img src="img/img-equipo7.jpg" alt="">
-            </div>
-
-            <div  >
-                <img src="img/img-equipo8.jpg" alt="">
-            </div>
-            
-            <div  >
-                <img src="img/img-equipo10.jpg" alt="">
-            </div>
-            
+        <!-- codigo para boton hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- icono de tres de boton hamburguesa -->
+          <span class="navbar-toggler-icon fs-6"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <!-- mb-lg-0 , hace que no haya margin bottom cuando los px sean menor a 992 en la botonera -->
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="index.html">Inicio</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link text-white" href="plantel.html">Plantel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+            </li>            
+          </ul>
+          
         </div>
-        
+      </div>
+    </nav>
+    <!-- termina nav -->
+
+    <!-- inicia carousel -->
+    <div id="carouselExampleControls" class="carousel slide mt-2 ms-2 me-2 " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active  ">
+          <img src="img/fondo-2.jpg" class="d-block w-100 " alt="imagen-independiente">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img-carrusel.jpg" class="d-block w-100 " alt="camiseta Independiente">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img3-carrusel.jpg" class="d-block w-100 " alt="cancha">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-        
-        <footer id="footer" class="pie" >
-            <a href="https://www.facebook.com/Independiente" target="_blank" >
-                <img src="img/facebook.jpg"  alt="seguinos en facebook"  class="pieIcon">
+    <!-- termina carousel -->
+
+    <main class="py-3">
+      <h2 class="text-center text-white bgRose  fs-1 ">Noticias</h2>
+      <div class="container-fluid">
+        <!-- row divide en 12 columnas -->
+        <div class="row">
+          <article class="col-sm-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <img src="img/falcioni.jpeg" class="card-img-top w-100 " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">¿Se queda o se va?</h5>
+                <p class="card-text">Falcioni se juega el puesto de DT en el proximo enfrentamiento contra Aldosivi.</p>
+                <a href="#" class="btn btn-primary">Ir a</a>
+              </div>
+            </div>
+          </article>
+          <!-- termina primera carta -->
+          <article class="col-sm-12 col-md-6 col-lg-4 mt-3">
+            <div class="card ">
+              <img src="img/partido.jpg" class="card-img-top w-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">25 de 28</h5>
+                <p class="card-text">Independiente hace 6 partidos que no gana y esta en la posicion 25 de 28 equipos.</p>
+                <a href="#" class="btn btn-primary">Ir a</a>
+              </div>
+            </div>
+          </article>
+          <!-- termina segunda carta -->
+          <article class="col-sm-12 col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <img src="img/img-equipo4.jpg" class="card-img-top w-100 " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Titular</h5>
+                <p class="card-text">Milton Alvarez volvera a ser titular despues del bajo rendimiento de Sebastián Sosa.</p>
+                <a href="#" class="btn btn-primary">Ir a</a>
+              </div>
+            </div>
+          </article>
+          <!-- termina tercera carta -->
+        </div>
+      </div>
+      <!-- termina container -->
+    </main> 
+
+    <!-- galeria -->
+
+    
+    <div class="container-fluid text-center">
+      <h2 class=" text-white">Galería</h2>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 ">
+          <img src="img/img-equipo.jpg" class="  w-100" alt="">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1">
+          <img src="img/img-equipo10.jpg" class=" w-100 " alt="">
+        </div>
+      </div>
+    
+      <div class="row ">
+        <div class="col-12 col-md-4 col-lg-4 p-1">
+          <img src="img/img-equipo2.jpg" class=" w-100" alt=""></div>
+        <div class="col-12 col-md-4 col-lg-4 p-1">
+          <img src="img/img-equipo3.jpg" class=" w-100" alt=""></div>
+        <div class="col-12 col-md-4 col-lg-4 p-1">
+          <img src="img/img-equipo5.jpg" class=" w-100" alt=""></div>
+      </div>
+    
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 p-1">
+          <img src="img/img-equipo8.jpg" class=" w-100" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 p-1">
+          <img src="img/img-equipo9.jpg" class=" w-100" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 p-1">
+          <img src="img/img-equipo7.jpg" class=" w-100" alt="">
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 p-1">
+          <img src="img/img-equipo6.jpg" class=" w-100" alt="">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="text-center footerBorder bg-white">
+        <a href="https://www.facebook.com/Independiente" target="blank" >
+                <img src="img/facebook.jpg"   alt="seguinos en facebook" >
             </a>
         <a href="https://www.instagram.com/caindependiente/" target="_blank" >
-            <img src="img/instagram.jpg"  alt="seguinos en instagram" class="pieIcon">
+            <img src="img/instagram.jpg"  alt="seguinos en instagram" >
         </a>
         <a href="https://twitter.com/Independiente" target="_blank">
-            <img src="img/twitter.jpg"  alt="seguinos en twitter" class="pieIcon">
+            <img src="img/twitter.jpg"  alt="seguinos en twitter" >
         </a>
+      </div>
+         
     </footer>
     
-</div>
-</body>
+
+    
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
