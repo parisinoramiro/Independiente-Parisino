@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+
 body{
     background-image:url(../img/fondo.jpg);
     background-size: 100% 100%;
@@ -9,14 +13,41 @@ body{
     background: linear-gradient(to top, black, red);
 }
 
-*{
-    margin: 0px; 
-    padding: 0px;   
+#botonera img{
+    width: 80px;
 }
 
-#botonera img{
-    width: 90px;
+#botonera ul li a{
+    color: white;
 }
+
+#botonera ul li a:hover{
+    color:black
+}
+
+/* index */
+
+.indH1{
+    font-family: 'Chonburi', cursive;
+}
+
+#carrusel img{
+    width: 100vw;
+    height: 40vw;
+    object-fit:cover; 
+}
+
+#cards img{
+    object-fit:cover; 
+    width: 100%;  
+    height: 35vh;      
+}
+
+.btnColor{
+    background-color: red;
+    color: white;
+}
+
 
 .bgRose{
     background-color: rgb(240, 70, 70);    
@@ -25,22 +56,6 @@ body{
 .noticiasH2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/* @keyframes animateH2 {
-    0%{width: 400px; color: red; background-color: white;}
-    50%{width: 1500px;color: white; background-color: rgb(240, 70, 70);}
-    /* 100%{width: 1500px;}         
-} */
-
-.animate{
-    animation-name: animateH2;
-    animation-duration: 7s;
-    animation-iteration-count: 1;
-} */
-
-div ul li a:hover{
-    color: red;
-} 
 
 footer img{
     width: 50px;
@@ -53,4 +68,39 @@ footer img{
     border: solid;
     color: black;
 }
+
+/* tienda */
+
+#productos h2{
+    animation-name: animateH2;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    background-color:rgb(240, 70, 70) ;
+    color: white;
+}
+
+@keyframes animateH2 {
+    0%{width: 40vw; color: red; background-color: white;}
+    50%{width: 100%;color: white; background-color: rgb(240, 70, 70);}
+     /* 100%{width: 1500px;}          */
+}
+
+/* nosotros */
+
+#historia p:first-letter{
+    color: red;
+    font-family: 'Chonburi', cursive;
+    font-size: 3rem;
+}
+
+/* contacto */
+
+.ubiMaps{
+    width: 80vw;
+    height: 30vw;
+   
+}
+
+
+
 
