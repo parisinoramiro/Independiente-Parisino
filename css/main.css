@@ -20,20 +20,23 @@ nav {
 nav img {
   width: 80px;
 }
-
-ul {
+nav ul {
   list-style: none;
   display: flex;
   list-style: none;
 }
-ul li {
+nav ul li {
   margin-right: 10px;
   margin-top: 15px;
+  color: white;
 }
-ul li a {
+nav ul li a {
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+}
+nav ul li a :hover {
+  color: black;
 }
 
 * {
