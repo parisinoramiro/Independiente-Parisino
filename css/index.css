@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+h1 {
+  color: white;
+  font-family: "Chonburi", cursive;
+  font-size: 1rem;
+}
+
+h2 {
+  color: white;
+  background-color: rgb(240, 70, 70);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, black, red);
+}
+nav img {
+  width: 80px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  list-style: none;
+}
+ul li {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+ul li a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5;
+}
+
+img {
+  width: 100%;
+}
+
+main div {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

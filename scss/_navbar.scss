@@ -1,0 +1,25 @@
+// nesting
+nav {
+     display: flex;
+    justify-content:space-between;
+    align-items:center;    
+    background: linear-gradient(to top, black, red);
+    img{
+        width: 80px;
+    }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    list-style: none;
+    li{
+        margin-right: 10px;
+        margin-top: 15px;
+        a{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: $primary;
+        }
+    }
+}
