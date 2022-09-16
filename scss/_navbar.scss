@@ -7,19 +7,26 @@ nav {
     img{
         width: 80px;
     }
-}
-
-ul{
+    
+    ul{
     list-style: none;
     display: flex;
     list-style: none;
     li{
         margin-right: 10px;
         margin-top: 15px;
+        color: $primary;
+        
         a{
             text-decoration: none;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: $primary;
+            color: $primary; 
+            & :hover{
+                color: $alternativ;
+            }           
         }
     }
 }
+}
+
+
