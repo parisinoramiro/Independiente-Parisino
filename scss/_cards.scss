@@ -15,6 +15,13 @@ main div{
     .btn{
         background-color: $secondary;
        color: $primary;
+       width: 60px;
+       
+       &:hover{
+           background-color: $alternativ;
+           color: $secondary;
+           transition: 1s;
+       }
     }
 
     

@@ -13,7 +13,8 @@ h2 {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(to top, black, red);
 }
@@ -30,13 +31,13 @@ nav ul li {
   margin-top: 15px;
   color: white;
 }
+nav ul li :hover {
+  color: black;
+}
 nav ul li a {
   text-decoration: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
-}
-nav ul li a :hover {
-  color: black;
 }
 
 * {
@@ -59,12 +60,14 @@ img {
   width: 100%;
 }
 
+aside {
+  margin: 10px;
+}
 aside img {
   width: 100vw;
   height: 40vw;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 10px;
 }
 
 footer {
@@ -94,4 +97,10 @@ main div div div {
 main div .btn {
   background-color: red;
   color: white;
+  width: 60px;
+}
+main div .btn:hover {
+  background-color: black;
+  color: red;
+  transition: 1s;
 }/*# sourceMappingURL=main.css.map */
