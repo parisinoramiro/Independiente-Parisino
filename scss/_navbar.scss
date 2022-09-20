@@ -1,7 +1,8 @@
 // nesting
 nav {
      display: flex;
-    justify-content:space-between;
+     flex-direction: row;
+    justify-content:space-around;
     align-items:center;    
     background: linear-gradient(to top, black, red);
     img{
@@ -16,14 +17,15 @@ nav {
         margin-right: 10px;
         margin-top: 15px;
         color: $primary;
+        & :hover{
+            color: $alternativ;
+        }  
         
         a{
             text-decoration: none;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: $primary; 
-            & :hover{
-                color: $alternativ;
-            }           
+                     
         }
     }
 }
