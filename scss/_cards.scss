@@ -1,21 +1,18 @@
-main div{    
-    display: flex;
-    margin: 0px 5px 10px 5px;
+#cards{    
+    margin: 0px 0px 10px 0px;
 
     img{
         object-fit:cover; 
         width: 100%;  
         height: 35vh; 
-        // margin: 0px 5px;
     }
     div div{
         flex-direction: column;
     }
 
     .btn{
-        background-color: $secondary;
-       color: $primary;
-       width: 60px;
+        @include boton($secondary, $primary, 60px);
+        
        
        &:hover{
            background-color: $alternativ;
@@ -23,7 +20,6 @@ main div{
            transition: 1s;
        }
     }
-
     
 }
 

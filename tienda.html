@@ -3,6 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="description" content="Indumentaria de Independiente">
+    <meta name="keywords"  content="Indumentaria, niños, niñas, adultos, Independiente, Futbol">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/logo-pestaña.jpg" type="image/x-icon">
      
@@ -12,47 +14,47 @@
     <!-- mi css -->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Independiente</title>
+    <title>Tienda</title>
   </head>
   <body>
     <!-- inicia nav -->
-    <nav class="navbar navbar-expand-lg navbar-light navDegrade" id="botonera">
-      <!-- lg de navbar-expand-lg(break point, sirve como media queris) tiene un total de 992 px, menos a eso se achica la pantalla y aparece el boton hamburguesa -->
-      <div class="container-fluid ">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <!-- lg de navbar-expand-lg(break point, sirve como media queris) tiene un total de 992 px, menor a eso se achica la pantalla y aparece el boton hamburguesa -->       
         <!-- logo -->
         <a href="index.html">
-          <img src="img/logo.jpg" alt="">
+          <img src="img/logo.jpg" alt="logo Independiente">
         </a>
-
-        <h1 class="fs-6 text-white me-auto indH1">Independiente</h1>
-
+        <h1 class="me-auto">Independiente</h1>
+        
+        
         <!-- codigo para boton hamburguesa -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- icono de tres de boton hamburguesa -->
-          <span class="navbar-toggler-icon fs-6"></span>
+          <span class="navbar-toggler-icon  "></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <!-- mb-lg-0 , hace que no haya margin bottom cuando los px sean mayor a 992 en la botonera -->
+          <ul class="navbar-nav ms-lg-auto ms-md-auto ms-2 mb-2 mb-lg-0 ">
+            <!-- mb-lg-0 , hace que no haya margin bottom cuando los px sean menor a 992 en la botonera -->
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a  href="index.html">Inicio</a>
             </li>            
-            <li class="nav-item">
-              <a class="nav-link" href="plantel.html">Plantel</a>
+            <li class="nav-item ">
+              <a  href="plantel.html">Plantel</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Tienda</a>
+            <li class="nav-item ">
+              <a  href="tienda.html">Tienda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            <li class="nav-item ">
+              <a  href="nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+            <li class="nav-item ">
+              <a  href="contacto.html">Contacto</a>
             </li>            
           </ul>
           
         </div>
-      </div>
+      
+      
     </nav>
     <!-- termina nav -->
 
@@ -62,107 +64,105 @@
         <div class="row justify-content-center" >
              <!-- productos -->        
         
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
-            <img src="img/camiseta.jpeg" class="w-100 " alt="camiseta titular adulto">            
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
+            <img src="img/camiseta.jpeg" class="img-thumbnail" alt="camiseta titular adulto">            
               <p>Camiseta titular adulto</p>
               <p>$12499</p>            
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3  bg-white" >
-            <img src="img/camiseta-entrenamiento.jpeg" class="w-100" alt="camiseta entrenamiento">            
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3  " >
+            <img src="img/camiseta-entrenamiento.jpeg" class="img-thumbnail" alt="camiseta entrenamiento">            
               <p >Camiseta de entrenamiento</p>
               <p>$8999</p>            
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
-            <img src="img/camiseta-suplente" class="w-100" alt="camiseta suplente">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
+            <img src="img/camiseta-suplente" class="img-thumbnail" alt="camiseta suplente">
               <p>Camiseta suplente</p>
               <p>$12499</p>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
-            <img src="img/camiseta.jpeg" class="w-100" alt="camiseta titular niño">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
+            <img src="img/camiseta.jpeg" class="img-thumbnail" alt="camiseta titular niño">
               <p >Camiseta titular niño</p>
               <p>$9199</p>
           </div>     
           
-          <div>
-            <h2>Buzos</h2>
-          </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          
+           <h2>Buzos</h2> 
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
               <img src="img/buzo-rojo.jpeg" class="img-thumbnail" alt="buzo Independiente">
               <p >Buzo Independiente</p>
               <p>$9999</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
               <img src="img/buzo.jpeg" class="img-thumbnail" alt="buzo azul">            
               <p>Buzo azul</p>
               <p>$10999</p>           
             </div>        
           
-          <div>
-            <h2>Camperas</h2>
-          </div>
           
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+            <h2>Camperas</h2>
+          
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/campera-2" class="img-thumbnail" alt="campera entrenamiento">            
               <p>Campera entrenamiento</p>
               <p>$12749</p>
           </div>    
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3  bg-white" >
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/campera-lluvia" class="img-thumbnail" alt="campera lluvia">
               <p>Campera lluvia</p>
               <p>$22999</p>
           </div>  
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/campera.jpeg" class="img-thumbnail" alt="campera">
               <p>Campera</p>
               <p>$14999</p>
           </div>            
           
-          <div>
+        
             <h2>Pantalones</h2>
-          </div>
           
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white " >
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3" >
             <img src="img/short-independiente" class="img-thumbnail" alt="short titular">
               <p >Short titular</p>
               <p>$6999</p>
           </div>    
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3  bg-white" >
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/short-suplente" class="img-thumbnail" alt="short suplente">
               <p>Short suplente</p>
               <p>$5499</p>
           </div>  
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3  bg-white" >
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/pantalon" class="img-thumbnail" alt="joggin">
               <p>Joggin Independiente</p>
               <p>$10999</p>
           </div>    
-          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/pantalon-2" class="img-thumbnail" alt="pantalon entrenamiento">
               <p >Pantalon de entrenamiento</p>
               <p>$11999</p>
           </div>  
           
-          <div>
-            <h2>Accesorios</h2>
-          </div>
           
-          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+            <h2>Accesorios</h2>
+  
+          
+          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/piluso-independiente" class="img-thumbnail" alt="piluso">
               <p>Piluso Independiente</p>
               <p>$4999</p>
           </div>    
-          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/bufanda" class="img-thumbnail" alt="bufanda">
               <p>Bufanda Independiente</p>
               <p>$4599</p>
           </div>  
-          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/pelota" class="img-thumbnail" alt="pelota">
               <p>Pelota Independiente</p>
               <p>$5499</p>
           </div>    
-          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 bg-white" >
+          <div class="card col-12 col-sm-6 col-md-4 col-lg-3 m-3 " >
             <img src="img/bolso" class="img-thumbnail" alt="bolso">
               <p>Bolso Independiente</p>
               <p>$10999</p>
