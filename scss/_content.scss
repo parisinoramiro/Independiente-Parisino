@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
-
 
 *{
     margin: 0;
@@ -17,12 +15,11 @@ body{
     background-attachment: fixed;
 }
 
-
-
 img{
     width: 100%;
 }
 
+// carrusel
 aside{
     margin: 10px;
     img{
@@ -31,4 +28,57 @@ aside{
         object-fit:cover;        
     }
 }
+
+// contacto
+
+#maps {
+    display: flex;
+    justify-content: center;
+}
+
+#maps iframe{
+    width: 70%;    
+    height: 50vh;
+    margin-bottom: 20px;
+}
+
+.btnColor{
+    @include boton(rgb(69, 69, 233), $alternativ, none);
+    font-weight: 500;
+}
+
+.btn-rounded{
+    @extend .btnColor;
+    border-radius: 3px;
+}
+
+// tienda
+
+#productos div div{
+    background-color: $primary;
+    width: 300px;
+    border: solid black;
+
+    img{
+        border-bottom: solid white;
+    }
+
+    img:hover{
+        border-bottom: solid gray;
+        transition: 1s;
+    }
+
+
+    
+}
+
+
+// @mixin flex($dire, $justify, $align, $wrap){
+//     display: flex;
+//     flex-direction: $dire;
+//     justify-content: $justify;
+//     align-items: $align;
+//     flex-wrap: $wrap;    
+// }
+
 

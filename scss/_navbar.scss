@@ -1,17 +1,12 @@
-// nesting
 nav {
-     display: flex;
-     flex-direction: row;
-    justify-content:space-around;
-    align-items:center;    
+    // @include flex(row,space-around,center,wrap);
+  
     background: linear-gradient(to top, black, red);
     img{
         width: 80px;
     }
     
     ul{
-    list-style: none;
-    display: flex;
     list-style: none;
     li{
         margin-right: 10px;
@@ -24,11 +19,11 @@ nav {
         a{
             text-decoration: none;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: $primary; 
-                     
+            color: $primary;                      
         }
     }
 }
 }
+
 
 

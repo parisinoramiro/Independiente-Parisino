@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 h1 {
   color: white;
   font-family: "Chonburi", cursive;
@@ -11,19 +12,18 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   background: linear-gradient(to top, black, red);
 }
 nav img {
   width: 80px;
 }
 nav ul {
-  list-style: none;
-  display: flex;
   list-style: none;
 }
 nav ul li {
@@ -70,6 +70,41 @@ aside img {
      object-fit: cover;
 }
 
+#maps {
+  display: flex;
+  justify-content: center;
+}
+
+#maps iframe {
+  width: 70%;
+  height: 50vh;
+  margin-bottom: 20px;
+}
+
+.btnColor, .btn-rounded {
+  background-color: rgb(69, 69, 233);
+  color: black;
+  width: none;
+  font-weight: 500;
+}
+
+.btn-rounded {
+  border-radius: 3px;
+}
+
+#productos div div {
+  background-color: white;
+  width: 300px;
+  border: solid black;
+}
+#productos div div img {
+  border-bottom: solid white;
+}
+#productos div div img:hover {
+  border-bottom: solid gray;
+  transition: 1s;
+}
+
 footer {
   background-color: white;
   text-align: center;
@@ -81,25 +116,24 @@ footer img {
   margin-top: 5px;
 }
 
-main div {
-  display: flex;
-  margin: 0px 5px 10px 5px;
+#cards {
+  margin: 0px 0px 10px 0px;
 }
-main div img {
+#cards img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 35vh;
 }
-main div div div {
+#cards div div {
   flex-direction: column;
 }
-main div .btn {
+#cards .btn {
   background-color: red;
   color: white;
   width: 60px;
 }
-main div .btn:hover {
+#cards .btn:hover {
   background-color: black;
   color: red;
   transition: 1s;

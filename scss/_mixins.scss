@@ -1,0 +1,5 @@
+@mixin boton($colorB,$color,$wi){
+   background-color: $colorB;
+   color: $color;
+   width: $wi;
+}
