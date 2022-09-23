@@ -19,7 +19,7 @@ img{
     width: 100%;
 }
 
-// carrusel
+//index carrusel
 aside{
     margin: 10px;
     img{
@@ -28,6 +28,7 @@ aside{
         object-fit:cover;        
     }
 }
+
 
 // contacto
 
@@ -55,7 +56,8 @@ aside{
 // tienda
 
 #productos div div{
-    background-color: $primary;
+    // background-color: $primary;
+    background-color: map-get($map: $paleta, $key: 'tres');
     width: 300px;
     border: solid black;
 
@@ -66,19 +68,26 @@ aside{
     img:hover{
         border-bottom: solid gray;
         transition: 1s;
-    }
-
-
-    
+    }    
 }
 
+// nosotros
 
-// @mixin flex($dire, $justify, $align, $wrap){
-//     display: flex;
-//     flex-direction: $dire;
-//     justify-content: $justify;
-//     align-items: $align;
-//     flex-wrap: $wrap;    
-// }
+.positionSedes{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: map-get($map: $paleta, $key: 'tres');
+}
+
+h3{
+    color: map-get($map: $paleta, $key: 'dos');
+    text-align: center;
+    font-family: 'Chonburi', cursive;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
 
 
