@@ -81,11 +81,11 @@ aside{
     background-color: map-get($map: $paleta, $key: 'tres');
 }
 
-h3{
+section h3{
     color: map-get($map: $paleta, $key: 'dos');
     text-align: center;
     font-family: 'Chonburi', cursive;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
