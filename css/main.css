@@ -113,11 +113,11 @@ aside img {
   background-color: white;
 }
 
-h3 {
+section h3 {
   color: black;
   text-align: center;
   font-family: "Chonburi", cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
