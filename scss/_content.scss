@@ -29,6 +29,41 @@ aside{
     }
 }
 
+// main
+
+.noticiasH2{
+    color: $primary;
+    background-color: rgb(240, 70, 70);
+    text-align: center;
+}
+
+
+// galeria
+
+.galeriaH2{
+    margin-top: 50px;
+    border-left: solid black;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: map-get($map: $paleta, $key: 'tres');
+}
+
+@media (min-width: 992px) {
+    
+    .galeryImg1{
+        height: 46vh;
+        width: 65.2vw;
+        object-fit:cover;
+    }
+    
+    .galeryImg2{
+        height: 46vh;
+        width: 32vw;
+        object-fit:cover;
+        margin-left: 16.5vw;
+    }
+
+    }
 
 // contacto
 
@@ -55,8 +90,26 @@ aside{
 
 // tienda
 
+.tiendaH2{
+    background-color: $primary;
+    color :rgb(69, 69, 233);
+}
+
+#productos h2{
+    animation-name: animateH2;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    background-color:$primary ;
+    color: rgb(69, 69, 233);
+}
+
+@keyframes animateH2 {
+    0%{width: 40vw; color: rgb(69, 69, 233); background-color: white;}
+    50%{width: 100%;color: white; background-color: rgb(69, 69, 233);}
+     /* 100%{width: 1500px;}          */
+}
+
 #productos div div{
-    // background-color: $primary;
     background-color: map-get($map: $paleta, $key: 'tres');
     width: 300px;
     border: solid black;
@@ -69,9 +122,14 @@ aside{
         border-bottom: solid gray;
         transition: 1s;
     }    
+
 }
 
 // nosotros
+
+.historiaH2{
+    font-family: 'Cinzel Decorative', cursive;
+}
 
 .positionSedes{
     border: solid;
@@ -81,13 +139,56 @@ aside{
     background-color: map-get($map: $paleta, $key: 'tres');
 }
 
-section h3{
+.sedesH3{
     color: map-get($map: $paleta, $key: 'dos');
     text-align: center;
     font-family: 'Chonburi', cursive;
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+
+// plantel
+ .nombre{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    background-color: rgb(192, 24, 24);
+    color: map-get($map: $paleta, $key: 'dos')   
+ }
+
+ .nombreArq{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    background-color: black;
+    color: rgb(192, 24, 24);   
+ }
+
+ .arqueroH2{
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    color: map-get($map: $paleta, $key: 'dos');
+    display: block;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid map-get($map: $paleta, $key: 'cuatro');      
+    height: 0;
+    line-height: 55px;
+ }
+
+ .jugadoresH2{
+    text-align: left;
+    padding: 10px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: map-get($map: $paleta, $key: 'cuatro');
+    display: block;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid map-get($map: $paleta, $key: 'dos');      
+    height: 0;
+    line-height: 55px;
+ }
 
 
 
