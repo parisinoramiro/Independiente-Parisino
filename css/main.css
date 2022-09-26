@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 h1 {
   color: white;
   font-family: "Chonburi", cursive;
@@ -121,6 +122,44 @@ aside img {
   color: rgb(69, 69, 233);
 }
 
+#productos h2 {
+  -webkit-animation-name: animateH2;
+          animation-name: animateH2;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  background-color: white;
+  color: rgb(69, 69, 233);
+}
+
+@-webkit-keyframes animateH2 {
+  0% {
+    width: 40vw;
+    color: rgb(69, 69, 233);
+    background-color: white;
+  }
+  50% {
+    width: 100%;
+    color: white;
+    background-color: rgb(69, 69, 233);
+  }
+  /* 100%{width: 1500px;}          */
+}
+
+@keyframes animateH2 {
+  0% {
+    width: 40vw;
+    color: rgb(69, 69, 233);
+    background-color: white;
+  }
+  50% {
+    width: 100%;
+    color: white;
+    background-color: rgb(69, 69, 233);
+  }
+  /* 100%{width: 1500px;}          */
+}
 #productos div div {
   background-color: white;
   width: 300px;
@@ -132,6 +171,10 @@ aside img {
 #productos div div img:hover {
   border-bottom: solid gray;
   transition: 1s;
+}
+
+.historiaH2 {
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .positionSedes {
@@ -207,9 +250,8 @@ footer img {
   margin: 0px 0px 10px 0px;
 }
 #cards h3 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: black;
-  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
   width: 40%;
   padding-left: 10px;
   font-size: 2rem;

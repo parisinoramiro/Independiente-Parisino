@@ -2,9 +2,8 @@
     margin: 0px 0px 10px 0px;
 
     h3{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-color: map-get($map: $paleta, $key: 'dos');
-        color: map-get($map: $paleta, $key: 'tres');
+        font-family: Georgia, 'Times New Roman', Times, serif;        
+        color: map-get($map: $paleta, $key: 'dos');
         width: 40%;
         padding-left: 10px;
         font-size: 2rem;
