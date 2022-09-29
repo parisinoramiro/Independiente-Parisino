@@ -132,10 +132,12 @@ aside{
 
 .positionSedes{
     border: solid;
-    display: flex;
-    justify-content: center;
     margin-bottom: 3rem;
     background-color: map-get($map: $paleta, $key: 'tres');
+}
+
+.imgSede{
+    width: 100%;
 }
 
 .sedesH3{
@@ -144,6 +146,20 @@ aside{
     font-family: 'Chonburi', cursive;
     font-size: 1.5rem;
     margin-bottom: 15px;
+}
+
+@media (max-width: 575px) {
+
+    #sedes{
+
+        text-align: center;
+
+        
+        .imgSede{
+            width: 60vw;
+            text-align: center;
+        }
+    }
 }
 
 // plantel

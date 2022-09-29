@@ -177,10 +177,12 @@ aside img {
 
 .positionSedes {
   border: solid;
-  display: flex;
-  justify-content: center;
   margin-bottom: 3rem;
   background-color: white;
+}
+
+.imgSede {
+  width: 100%;
 }
 
 .sedesH3 {
@@ -191,6 +193,15 @@ aside img {
   margin-bottom: 15px;
 }
 
+@media (max-width: 575px) {
+  #sedes {
+    text-align: center;
+  }
+  #sedes .imgSede {
+    width: 60vw;
+    text-align: center;
+  }
+}
 .nombre {
   font-family: "Lora", serif;
   font-size: 2rem;
@@ -239,9 +250,12 @@ footer {
 }
 footer img {
   width: 50px;
-  height: auto;
   padding: 0px 5px 5px 5px;
   margin-top: 5px;
+}
+footer a {
+  list-style: none;
+  text-decoration: none;
 }
 
 #cards {
@@ -271,4 +285,8 @@ footer img {
   background-color: black;
   color: red;
   transition: 1s;
+}
+
+#cards article {
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
