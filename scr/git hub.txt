@@ -1,3 +1,5 @@
-pagina de git hub en animaciones 
+pagina de git hub 
 
-https://parisinoramiro.github.io/Independiente-Parisino/index.html
+https://github.com/parisinoramiro/Independiente-Parisino 
+
+https://parisinoramiro.github.io/Independiente-Parisino/
