@@ -95,6 +95,15 @@ aside img {
     margin-left: 16.5vw;
   }
 }
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
 #maps {
   display: flex;
   justify-content: center;
@@ -242,6 +251,17 @@ aside img {
   border-bottom: 40px solid black;
   height: 0;
   line-height: 55px;
+}
+
+.errorImg {
+  justify-content: center;
+  text-align: center;
+}
+
+#error p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 2rem;
 }
 
 footer {
