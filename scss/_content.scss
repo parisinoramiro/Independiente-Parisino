@@ -67,6 +67,15 @@ aside{
 
 // contacto
 
+button a{
+    text-decoration: none;
+    color: $alternativ;
+}
+
+a:hover{
+    color: $primary;
+}
+
 #maps {
     display: flex;
     justify-content: center;
@@ -163,6 +172,7 @@ aside{
 }
 
 // plantel
+
  .nombre{
     font-family: 'Lora', serif;
     font-size: 2rem;
@@ -204,6 +214,21 @@ aside{
     height: 0;
     line-height: 55px;
  }
+
+//  error
+
+.errorImg{
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#error p{
+   font-family: Georgia, 'Times New Roman', Times, serif;        
+   color: $primary;
+   font-size: 2rem;
+
+}
 
 
 
